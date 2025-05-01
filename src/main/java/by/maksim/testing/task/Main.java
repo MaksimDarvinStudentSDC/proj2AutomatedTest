@@ -18,6 +18,8 @@ public class Main {
         int x2 = scanner.nextInt();
         int r2 = scanner.nextInt();
 
+        scanner.close();
+
         Circle circle1 = new Circle(x1, r1);
         Circle circle2 = new Circle(x2, r2);
 
@@ -35,9 +37,9 @@ public class Main {
         int x2 = c2.getX();
         int r2 = c2.getR();
 
-        int d = Math.abs(x1 - x2);       // расстояние между центрами
-        int sum = r1 + r2;               // сумма радиусов
-        int diff = Math.abs(r1 - r2);    // разность радиусов
+        int d = Math.abs(x1 - x2);
+        int sum = r1 + r2;
+        int diff = Math.abs(r1 - r2);
 
         if (x1 == x2 && r1 == r2) {
             return "Infinite number of intersection points (identical circles)";
